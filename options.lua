@@ -4,9 +4,27 @@ return {
     -- set to true or false etc.
     relativenumber = true, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
-    spell = false, -- sets vim.opt.spell
+    spell = true, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-    wrap = false, -- sets vim.opt.wrap
+    wrap = true, -- sets vim.opt.wrap
+    -- where my old config begins
+    clipboard = "",
+    -- number = true,
+    -- relativenumber = true,
+    -- numberwidth = 3,
+    ruler = true,
+    -- autoindent = true,
+    -- expandtab = true,
+    termguicolors = true,
+    -- shiftwidth = 4,
+    -- tabstop = 4,
+    -- softtabstop = 4,
+    -- smartindent = true,
+    -- conceallevel = 3,
+    spelllang = "en_us",
+    smartcase = true,
+    ignorecase = true,
+
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
