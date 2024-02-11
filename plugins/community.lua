@@ -9,7 +9,7 @@ return {
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
-  { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
+  -- { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
   { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.git.octo-nvim" },
   -- FIXME: this plugin does not work particularly well
