@@ -27,6 +27,10 @@ return {
       end,
       desc = "Pick to close",
     },
+    ["<leader>fs"] = {
+      function() require("telescope.builtin").lsp_dynamic_workspace_symbols() end,
+      desc = "Find workplace symbols",
+    },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },

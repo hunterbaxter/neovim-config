@@ -9,7 +9,7 @@ return {
       "python",
       "rust",
       "toml",
-      "yaml" 
+      "yaml"
     })
   end,
 }

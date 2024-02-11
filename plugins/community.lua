@@ -5,7 +5,13 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   { import = "astrocommunity.colorscheme.github-nvim-theme" },
-  { import = "astrocommunity.pack.rust" },
+  -- { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.python" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
+  { import = "astrocommunity.editing-support.multicursors-nvim" },
+  { import = "astrocommunity.git.octo-nvim" },
+  -- FIXME: this plugin does not work particularly well
+  -- { import = "astrocommunity.project.nvim-spectre" },
 }

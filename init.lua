@@ -17,10 +17,8 @@ return {
     },
   },
 
-  -- Set colorscheme to use
-  -- colorscheme = "astrodark",
+  -- We now call the colorscheme after our polish autocommand so that we can get special treesitter color modification
   -- colorscheme = "github_light_colorblind",
-  colorscheme = "github_light",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -71,6 +69,15 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
+    vim.api.nvim_create_autocmd("ColorScheme", {
+      callback = function()
+        -- https://gist.github.com/swarn/fb37d9eefe1bc616c2a7e476c0bc0316#changing-highlights
+        vim.api.nvim_set_hl(0, "@lsp.mod.reference.rust", { italic = true })
+        vim.api.nvim_set_hl(0, "@lsp.mod.mutable.rust", { bold = true })
+      end,
+    })
+    vim.cmd [[colorscheme github_light_colorblind]]
+
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {

@@ -16,6 +16,7 @@ return {
         " ░  ░  ░   ░  ░    ░  ░    ░  ░    ░ ░      ░  ░  ░   ░              ░             ░  ░   ░      ",
         "                                                                                                 ",
       }
+      opts.section.header.opts.hl="Error"
       return opts
     end,
   },
